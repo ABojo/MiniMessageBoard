@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+
+.main-heading {
+  text-align: center;
+  margin: 5rem 0;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.messages-box {
+  width: 90%;
+  max-width: 60rem;
+
+  margin: 0 auto;
+}
+
+.message {
+  background-color: rgb(60, 60, 60);
+  -webkit-box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.74);
+  box-shadow: 5px 5px 15px -10px rgba(0, 0, 0, 0.74);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.message__name {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.message__text {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.message__date {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.btn-new {
+  background-color: #2ecc71;
+  padding: 1.5rem;
+  border: none;
+  color: white;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 2rem;
+  border-radius: 1rem;
+  font-weight: 900;
+  transition: all 0.2s;
+}
+
+.btn-new:hover {
+  background-color: #209b53;
+}

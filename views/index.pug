@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width">
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <title>Mini Message Board</title>
   </head>
   <body>
-    <h1>Message Board</h1>
+    <h1 class='main-heading'>Mini Message Board</h1>
+    <div class='messages-box'>
+      each message in messages 
+        <div class='message'>
+          <p class='message__name'>#{message.user}</p>
+          <p class='message__text'>#{message.text}</p>
+          <p class='message__date'>#{message.added}</p>
+        </div>
+      
+
+      <a class='btn-new' href='/new'>New Message</a>
+    </div>
   </body>
 </html>
