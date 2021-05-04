@@ -11,6 +11,7 @@ const messages = [
   { text: 'Another test message', user: 'ABojo', added: new Date() },
 ];
 
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 app.set('views', 'views');
 app.set('view engine', 'pug');
@@ -24,7 +25,10 @@ app.get('/new', (req, res) => {
 });
 
 app.post('/new', (req, res) => {
-  //Push new message into array
+  const { user, text } = req.body;
+  messages.push({ user, text, added: new Date() });
+
+  res.redirect('/');
 });
 
 app.all('*', (req, res) => {
