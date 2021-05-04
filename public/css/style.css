@@ -53,19 +53,43 @@ body {
   margin-top: 1rem;
 }
 
-.btn-new {
+.btn-new,
+.form__button {
   background-color: #2ecc71;
   padding: 1.5rem;
   border: none;
   color: white;
   text-decoration: none;
   font-family: inherit;
-  font-size: 2rem;
+  font-size: 1.6rem;
   border-radius: 1rem;
   font-weight: 900;
   transition: all 0.2s;
 }
 
-.btn-new:hover {
+.btn-new:hover,
+.form__button:hover {
   background-color: #209b53;
+}
+
+.form {
+  width: 90%;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 3rem;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-family: inherit;
+  resize: none;
+}
+
+.form__input.big {
+  height: 10rem;
 }

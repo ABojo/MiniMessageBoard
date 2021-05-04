@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Mini Message Board - New Message</title>
+  </head>
+  <body>
+  <h1 class='main-heading'>New Message</h1>
+  <form class='form' method='POST' action='/new'>
+    <input type='text' class='form__input' placeholder='Username' name='user' required> 
+    <textarea type='text' class='form__input big' placeholder ='Message' name='text' required></textarea> 
+    <input type='submit' class='form__button' value='Send Message'> 
+  </form>
+  </body>
+</html>

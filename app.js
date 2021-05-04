@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/new', (req, res) => {
-  res.send('This is the new message page');
+  res.render('new');
 });
 
 app.post('/new', (req, res) => {
