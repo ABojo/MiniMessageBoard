@@ -35,6 +35,6 @@ app.all('*', (req, res) => {
   res.send('Sorry, that page does not exist on this server!');
 });
 
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log('Server is listenting for incoming requests!');
 });
